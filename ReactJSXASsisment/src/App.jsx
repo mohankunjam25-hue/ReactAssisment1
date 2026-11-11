@@ -4,11 +4,41 @@ import StudentList from "./component/StudentList";
 import Footer from "./component/Footer";
 
 const students = [
-  { id: 1, name: "Rahul", email: "rahul@gmail.com", course: "React", marks: 85 },
-  { id: 2, name: "Priya", email: "priya@gmail.com", course: "JavaScript", marks: 92 },
-  { id: 3, name: "Aman", email: "aman@gmail.com", course: "Python", marks: 65 },
-  { id: 4, name: "Neha", email: "neha@gmail.com", course: "React", marks: 78 },
-  { id: 5, name: "Rohit", email: "rohit@gmail.com", course: "JavaScript", marks: 55 },
+  {
+    id: 1,
+    name: "Rahul",
+    email: "mohankunjam25@navgurukul.org",
+    course: "React",
+    marks: 85,
+  },
+  {
+    id: 2,
+    name: "Mohan",
+    email: "mohankunjam25@navgurukul.org",
+    course: "JavaScript",
+    marks: 92,
+  },
+  {
+    id: 3,
+    name: "Ashok",
+    email: "mohankunjam25@navgurukul.org",
+    course: "Python",
+    marks: 65,
+  },
+  {
+    id: 4,
+    name: "Subash",
+    email: "mohankunjam25@navgurukul.org",
+    course: "React",
+    marks: 78,
+  },
+  {
+    id: 5,
+    name: "Rakesh",
+    email: "mohankunjam25@navgurukul.org",
+    course: "JavaScript",
+    marks: 55,
+  },
 ];
 
 // const studentNames = students.map(student => student.name);
