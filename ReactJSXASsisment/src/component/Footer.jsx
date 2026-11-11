@@ -1,12 +1,9 @@
-function Footer(){
-
-    return(
-        <div>
-            HII THis is footer
-        </div>
-    )
+function Footer() {
+  return (
+    <footer>
+      <p>Student Information Dashboard © 2026</p>
+    </footer>
+  );
 }
-
-
 
 export default Footer;

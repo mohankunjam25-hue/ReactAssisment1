@@ -1,9 +1,13 @@
-// import React from 'react'
+import StudentCard from "./StudentCard";
 
-function StudentList() {
+function StudentList({ students }) {
   return (
-    <div>StudentList</div>
-  )
+    <div>
+      {students.map((student) => (
+        <StudentCard key={student.id} student={student} />
+      ))}
+    </div>
+  );
 }
 
-export default StudentList
+export default StudentList;
