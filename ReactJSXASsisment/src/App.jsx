@@ -1,5 +1,4 @@
 import Navbar from "./component/Navbar";
-import StudentCard from "./component/StudentCard";
 import StudentList from "./component/StudentList";
 import Footer from "./component/Footer";
 
@@ -41,18 +40,13 @@ const students = [
   },
 ];
 
-// const studentNames = students.map(student => student.name);
-
 const topStudents = students.filter(student => student.marks > 70);
-
-const findStudent = (id) => students.find(student => student.id === id);
 
 const averageMarks = students.reduce(
   (total, student) => total + student.marks, 0
 ) / students.length;
 
 function App() {
-  const featuredStudent = findStudent(1);
 
   return (
     <>
@@ -63,13 +57,12 @@ function App() {
 
         <section>
           <h2>Total Students: {students.length}</h2>
-          <h2>Average Marks: {averageMarks.toFixed(2)}</h2>
+          <h2>Average Marks: {averageMarks}</h2>
           <h2>Students Above 70: {topStudents.length}</h2>
         </section>
 
         <section>
           <h2>Featured Student</h2>
-          <StudentCard student={featuredStudent} />
         </section>
 
         <section>
